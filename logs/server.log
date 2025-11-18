@@ -1,7 +1,19 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [157] using StatReload
-INFO:     Started server process [159]
+INFO:     Started reloader process [240] using StatReload
+INFO:     Started server process [242]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:44054 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:56162 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:56166 - "GET /api/turbines?status=Active HTTP/1.1" 200 OK
+INFO:     172.20.0.1:56178 - "GET /api/turbines?status=Inactive HTTP/1.1" 200 OK
+INFO:     172.20.0.1:56190 - "GET /api/turbines?status=Inactive HTTP/1.1" 200 OK
+INFO:     172.20.0.1:56174 - "GET /api/turbines/stats HTTP/1.1" 200 OK
+INFO:     172.20.0.1:56176 - "GET /api/turbines?status=Active HTTP/1.1" 200 OK
+INFO:     172.20.0.1:56186 - "GET /api/turbines/stats HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59630 - "GET /api/turbines?status=Active HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59636 - "GET /api/turbines?status=Active HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59656 - "GET /api/turbines?status=Inactive HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59658 - "GET /api/turbines?status=Inactive HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59640 - "GET /api/turbines/stats HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59670 - "GET /api/turbines/stats HTTP/1.1" 200 OK

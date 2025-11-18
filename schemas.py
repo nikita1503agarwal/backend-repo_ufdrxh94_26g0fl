@@ -41,8 +41,14 @@ class Product(BaseModel):
 # Add your own schemas here:
 # --------------------------------------------------
 
-# Note: The Flames database viewer will automatically:
-# 1. Read these schemas from GET /schema endpoint
-# 2. Use them for document validation when creating/editing
-# 3. Handle all database operations (CRUD) directly
-# 4. You don't need to create any database endpoints!
+class Turbine(BaseModel):
+    """
+    Wind turbines collection schema
+    Collection name: "turbine"
+    """
+    name: str = Field(..., description="Turbine name or identifier")
+    status: str = Field(..., description="Operational status e.g., Active / Inactive")
+    latitude: Optional[float] = Field(None, description="Latitude in decimal degrees")
+    longitude: Optional[float] = Field(None, description="Longitude in decimal degrees")
+    capacity_mw: Optional[float] = Field(None, description="Nameplate capacity in MW")
+    location: Optional[str] = Field(None, description="Location string if available")
